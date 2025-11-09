@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ar">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>تسجيل دخول — Rayan UI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-bg">
+    <div class="blobs">
+      <div class="blob b1"></div>
+      <div class="blob b2"></div>
+      <div class="blob b3"></div>
+    </div>
+  </div>
+
+  <main class="container">
+    <div class="card">
+      <div class="card-left">
+        <h1 class="brand">ريان</h1>
+        <p class="lead">مرحباً! سجّل دخولك إلى حسابك</p>
+
+        <form id="loginForm" autocomplete="off">
+          <div class="input-group">
+            <input type="text" id="username" required />
+            <label for="username">اسم المستخدم أو البريد</label>
+            <span class="input-underline"></span>
+          </div>
+
+          <div class="input-group">
+            <input type="password" id="password" required />
+            <label for="password">كلمة المرور</label>
+            <span class="input-underline"></span>
+          </div>
+
+          <div class="actions">
+            <label class="checkbox">
+              <input type="checkbox" id="remember" />
+              <span>تذكرني</span>
+            </label>
+
+            <a href="#" class="forgot">نسيت كلمة المرور؟</a>
+          </div>
+
+          <button class="btn" type="submit">
+            <span class="btn-text">دخول</span>
+            <span class="btn-progress" aria-hidden></span>
+          </button>
+
+          <div class="divider"><span>أو تسجيل بواسطة</span></div>
+
+          <div class="socials">
+            <button type="button" class="social google">Google</button>
+            <button type="button" class="social github">GitHub</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="card-right" aria-hidden="true">
+        <div class="illustration">
+          <svg viewBox="0 0 200 200" class="illus-shape">
+            <defs>
+              <linearGradient id="g" x1="0" x2="1">
+                <stop offset="0" stop-color="#7c3aed" />
+                <stop offset="1" stop-color="#06b6d4" />
+              </linearGradient>
+            </defs>
+            <path fill="url(#g)" d="M40,-58C51.4,-47.6,60.5,-38.6,64.7,-27.9C69,-17.2,68.4,-4.9,66.2,6.3C64,17.5,60.2,27.6,52.7,36.7C45.2,45.8,34,53.9,21.3,60.7C8.6,67.5,-6.8,73,-19.6,69.4C-32.4,65.7,-42.6,53,-53.1,40.6C-63.6,28.2,-74.6,16.1,-77.8,2.7C-81.1,-10.8,-76.6,-25.6,-66.1,-36.7C-55.6,-47.8,-39.9,-55.1,-24.2,-61.5C-8.4,-67.9,7.4,-73.5,20.8,-70.6C34.2,-67.7,45.6,-56.4,40,-58Z" transform="translate(100 100)" />
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <footer class="page-footer">صممه ريان — مثال تعليمي</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
